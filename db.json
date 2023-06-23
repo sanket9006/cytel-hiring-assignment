@@ -15,14 +15,6 @@
       "product3": 77
     }
   },
-  "Bombay": {
-    "status": "success",
-    "data": {
-      "product1": 137,
-      "product2": 23,
-      "product3": 77
-    }
-  },
   "Pune": {
     "status": "success",
     "data": {
