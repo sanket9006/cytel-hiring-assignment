@@ -7,14 +7,8 @@ const Homepage = () => {
     const dispatch = useDispatch();
     const cityList = useSelector(state => state.cityList);
     const uniqueProductNames = useSelector(state => state.uniqueProductNames);
-    const isInitialRender = React.useRef(true);
 
     useEffect(() => {
-        // To avoid rendering twice in development mode
-        if (isInitialRender.current) {
-            isInitialRender.current = false;
-            return;
-        }
         fetchCityList();
     }, []);
 
