@@ -1,14 +1,14 @@
 {
-  "api": {
-    "sales": {
-      "Bombay": {
-        "status": "success",
-        "data": {
-          "product1": 137,
-          "product2": 23,
-          "product3": 77
-        }
-      }
-    }
+  "posts": [
+    { "id": 1, "title": "Post 1" },
+    { "id": 2, "title": "Post 2" },
+    { "id": 3, "title": "Post 3" }
+  ],
+  "comments": [
+    { "id": 1, "body": "some comment", "postId": 1 },
+    { "id": 2, "body": "some comment", "postId": 1 }
+  ],
+  "profile": {
+    "name": "typicode"
   }
 }
