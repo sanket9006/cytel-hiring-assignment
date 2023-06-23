@@ -10,5 +10,23 @@
   ],
   "profile": {
     "name": "typicode"
-  }
+  },
+  "Bombay": {
+    "status": "success",
+    "data": {
+      "product1": 137,
+      "product2": 23,
+      "product3": 77
+    }
+  },
+  "Bangalore": [
+    {
+      "status": "success",
+      "data": {
+        "product1": 137,
+        "product2": 23,
+        "product3": 77
+      }
+    }
+  ]
 }
