@@ -86,24 +86,30 @@ const Homepage = () => {
     };
 
     return (
-        <div>
-            <h2>List of Cities:</h2>
-            <ul>
+        <div className="container mx-auto px-4 py-8">
+            <h2 className="text-2xl font-bold mb-4">List of Cities:</h2>
+            <ul className="list-disc ml-4">
                 {cityList.map((city, index) => (
                     <li key={index}>
-                        <Link to={`/city/${city.city}`} onClick={handleCityClick}>
+                        <Link
+                            to={`/city/${city.city}`}
+                            onClick={handleCityClick}
+                            className="text-blue-500 hover:text-blue-700"
+                        >
                             {city.city}
                         </Link>
                     </li>
                 ))}
             </ul>
-            <h2>Unique Products across all cities:</h2>
-            <ul>
+            <h2 className="text-2xl font-bold my-4">Unique Products across all cities:</h2>
+            <ul className="list-disc ml-4">
                 {uniqueProductNames.map((product, index) => (
-                    <li key={index} onClick={() => handleProductClick(product.productName)}>
-                        <Link to={`/product/${product.productName}`}>
-                            {product.productName}
-                        </Link>
+                    <li
+                        key={index}
+                        onClick={() => handleProductClick(product.productName)}
+                        className="cursor-pointer text-blue-500 hover:text-blue-700"
+                    >
+                        <Link to={`/product/${product.productName}`}>{product.productName}</Link>
                     </li>
                 ))}
             </ul>

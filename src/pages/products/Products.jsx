@@ -12,16 +12,18 @@ const ProductPage = () => {
 
     return (
         <div>
-            <h2>Product Name: {productname}</h2>
-            <h3>Cities where it's sold:</h3>
-            <ul>
-                {product &&
-                    product.cities.map((city, index) => (
-                        <li key={index}>
-                            {city.city} - Quantity: {city.quantity}
-                        </li>
-                    ))}
-            </ul>
+            <h2 className='font-bold'>Product Name: {productname}</h2>
+            <h3 className='font-bold'>Cities where it's sold:</h3>
+            <div className='ml-8'>
+                <ul>
+                    {product &&
+                        product.cities.map((city, index) => (
+                            <li className='list-decimal' key={index}>
+                                {city.city} - <span className='text-blue-500'>Quantity: {city.quantity}</span>
+                            </li>
+                        ))}
+                </ul>
+            </div>
         </div>
     );
 };

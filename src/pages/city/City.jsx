@@ -21,15 +21,17 @@ const City = () => {
 
     return (
         <div>
-            <h2>Products Sold in {cityname}:</h2>
+            <h2 className='font-bold'>Products Sold in {cityname}:</h2>
             {productData ? (
-                <ul>
-                    {Object.entries(productData).map(([productName, sales]) => (
-                        <li key={productName}>
-                            {productName}: {sales}
-                        </li>
-                    ))}
-                </ul>
+                <div className='ml-8'>
+                    <ul className='list-decimal'>
+                        {Object.entries(productData).map(([productName, sales]) => (
+                            <li key={productName}>
+                                {productName}: {sales}
+                            </li>
+                        ))}
+                    </ul>
+                </div>
             ) : (
                 <p>Loading product data...</p>
             )}

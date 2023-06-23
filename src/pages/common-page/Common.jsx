@@ -5,16 +5,19 @@ import { incrementCitiesVisited, incrementProductsVisited } from '../../redux/ac
 const CommonPage = ({ citiesVisited, productsVisited, incrementCitiesVisited, incrementProductsVisited }) => {
 
     return (
-        <div>
-            <div>
-                Cities Visited: {citiesVisited} <br />
-                <br />
-                Products Visited: {productsVisited} <br />
-                <br />
-                <button onClick={() => handleRefreshClick()}>Refresh</button>
+        <div className="p-4 min-w-screen flex items-center justify-center">
+            <div className="max-w-md mx-auto bg-white shadow-lg rounded-lg p-8">
+                <div className="text-lg mb-6">
+                    <p className="mb-2">Cities Visited: {citiesVisited}</p>
+                    <p className="mb-2">Products Visited: {productsVisited}</p>
+                </div>
+                <button
+                    className="w-full bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    onClick={handleRefreshClick}
+                >
+                    Refresh
+                </button>
             </div>
-
-
         </div>
     );
 };
