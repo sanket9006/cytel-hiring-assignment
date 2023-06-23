@@ -38,13 +38,5 @@
       "product2": 2,
       "product3": 7
     }
-  },
-  "New Delhi": {
-    "status": "success",
-    "data": {
-      "product1": 17,
-      "product2": 23,
-      "product3": 7
-    }
   }
 }
